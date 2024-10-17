@@ -31,7 +31,8 @@ let
     preBuild = let
       patch = pkgs.fetchpatch2 {
         url = "https://github.com/nlewo/image/commit/c2254c998433cf02af60bf0292042bd80b96a77e.patch";
-        sha256 = "sha256-42dOFbAlNqtS/ZKdqO72rsREFLVVsolrCKPFVy72ZFE=";
+        # sha256 = "sha256-42dOFbAlNqtS/ZKdqO72rsREFLVVsolrCKPFVy72ZFE=";
+        sha256 = "sha256-SjUsp/wSgYfpBbWxcp8Yski6jOE2oYKktOvk0G/YnPg=";
       };
     in ''
       mkdir -p vendor/github.com/nlewo/nix2container/
